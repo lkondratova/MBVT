@@ -1,2 +1,2 @@
 # MBVT
-Macaque brain visualization tool (MBVT) for high throughput data.
+Macaque brain visualization tool for high throughput data.
