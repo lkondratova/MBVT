@@ -426,7 +426,11 @@ def two_sided_colorscale():
                     color_right(im_name2, 87)
                     color_right(im_name2, 108)
                     color_right(im_name2, 144)
-    os.rmdir(dirpath+'/output/left_part')
+    
+    if len(os.listdir(dirpath+'/output/left_part')) == 0:
+        os.rmdir(dirpath+'/output/left_part')
+    else:    
+        print("Error: Make sure each _DNA ending sample name has corresponding _RNA ending name.")
                 
     #create picture explaining colormap               
     colorscale = Image.new('RGB', (75, 25), '#FFFFFF')
@@ -517,7 +521,7 @@ def two_sided_colorscale():
         return ('something went wrong!')
     
     
-execute = input("Enter the command (whole_one_color(), whole_colorscale() or two_sided_colorscale())")
+execute = input("Enter the command (whole_one_color(), whole_colorscale() or two_sided_colorscale()):\n")
 if execute == 'whole_one_color()':
     whole_one_color()
 elif execute == 'whole_colorscale()':
