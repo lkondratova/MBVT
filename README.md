@@ -59,10 +59,3 @@ The file values.csv is stored in the MBVT repository and by default contains fak
 The current version does not make data transformation. Thus, all the data points should be integers from 0 to 5. 
 
 Each column represents a particular area in a macaque’s brain.  Columns should not be removed or rearranged. The first column is for the names of the samples. It will appear in the final .pdf file as a compact legend. Do not use special characters in names. Use underscore (“_”) as a separator (for example AAV_0_Inj_0_Animal_0). For the function two_sided_colorscale() Each sample name should be used twice: once ending with ‘_DNA’ (representing DNA results for coloring the left part) and the second time ending should be ‘_RNA’ (representing RNA results for coloring the right side). For example, AAV_0_Inj_0_Animal_0_DNA and AAV_0_Inj_0_Animal_0_RNA. In a final .pdf file, the images will be represented in alphabetical order regardless of the order in a values.csv file. 	
-
-Authors
-
-Liudmyla Kondratova (development)
-Ron J. Mandel (consulting)
-Sergei Zolotukhin (PI)
-
